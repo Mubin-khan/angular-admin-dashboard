@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header (toggleSideBarPlease)="sidebarToggle()"></app-header>
 <mat-drawer-container class="example-container">
-    <mat-drawer style="padding: 20px;" class="example-drawer"  mode="side" opened><app-sidebar></app-sidebar></mat-drawer>
+    <mat-drawer style="padding: 20px;" class="example-drawer"  mode="side" [opened]="sideBarOpen"><app-sidebar></app-sidebar></mat-drawer>
     <mat-drawer-content style="padding: 20px;">
         <router-outlet></router-outlet>
     </mat-drawer-content>
