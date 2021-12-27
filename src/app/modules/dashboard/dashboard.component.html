@@ -1,20 +1,36 @@
 <div>
-    Line charts
+    <app-widget-area [data]='bigChart'></app-widget-area>
 </div>
 
+<br>
 <mat-divider></mat-divider>
+<br>
 
-<div>
-    <div>Line chart</div>
-    <div>Line chart</div>
-    <div>Line chart</div>
-    <div>Line chart</div>
-    <div>Line chart</div>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <mat-card fxFlex="22">
+        <app-widget-card [data]="cardChart" label="New User" total="12k" percentage="50"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="22">
+        <app-widget-card [data]="cardChart" label="New User" total="10k" percentage="50"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="22">
+        <app-widget-card [data]="cardChart" label="New User" total="8k" percentage="50"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="22">
+        <app-widget-card [data]="cardChart" label="New User" total="6k" percentage="50"></app-widget-card>
+    </mat-card>
 </div>
 
+<br>
 <mat-divider></mat-divider>
+<br>
 
-<div>
-    <div>Table</div>
-    <div>Pie chart</div>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div>
+        Table
+        <!-- <app-widget-table></app-widget-table> -->
+    </div>
+    <div>
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
+    </div>
 </div>
